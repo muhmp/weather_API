@@ -1,5 +1,4 @@
 body {
-  font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
@@ -9,19 +8,25 @@ body {
   background: #222;
   background-image: url("https://source.unsplash.com/1600x900/?city,japan,night");
   background-repeat: no-repeat;
-  background-repeat: ;
+  background-attachment: fixed;
   font-size: 120%;
 }
 
+section {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px;
+}
+
 .card {
-  background: #222;
+  background: rgb(6, 32, 36);
   color: white;
   padding: 2em;
   border-radius: 30px;
   max-width: 420px;
-  margin: 1em;
+  margin: auto;
   width: 100%;
-  opacity: 95%;
+  opacity: 90%;
 }
 
 .search {
@@ -81,7 +86,7 @@ h1.temp {
 
 .weather.loading:after {
   visibility: visible;
-  content: "Loading...";
+  content: "Enter the name of the City";
   color: white;
   position: absolute;
   top: 0;
